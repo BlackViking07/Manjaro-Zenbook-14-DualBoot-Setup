@@ -112,3 +112,21 @@ chmod +x manjaro-zenbook-setup.sh
 - Must be run after Manjaro installation.
 - If dual booting, install Windows first, then Manjaro.
 - Make sure Secure Boot is disabled in BIOS.
+
+### 🔧 Common Fixes
+ - **Windows boots but Manjaro missing** → Boot from Live USB → open terminal:
+
+```bash
+sudo manjaro-chroot -a
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=manjaro
+update-grub
+exit
+```
+
+Reboot.
+ 
+ - **Clock wrong between Windows & Linux:**
+
+```bash
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
