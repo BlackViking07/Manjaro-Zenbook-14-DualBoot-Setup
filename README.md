@@ -130,3 +130,5 @@ Reboot.
 ```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
+## 📜 License
+This project is licensed under the MIT License. Feel free to use, modify, and share.
