@@ -95,8 +95,8 @@ Create:
 ## 📥 Post Installation
 1. **Download** the repo:
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/manjaro-zenbook-dualboot-setup.git
-cd manjaro-zenbook-dualboot-setup
+git clone https://github.com/BlackViking07/Manjaro-Zenbook-14-DualBoot-Setup.git
+cd Manjaro-Zenbook-14-DualBoot-Setup
 ```
 2. Make script executable:
 ```bash
