@@ -18,6 +18,21 @@ This script configures **Manjaro Linux** on the **ASUS Zenbook 14 UX3405MA** (Me
 
 ## 📥 Installation
 1. **Download** the repo:
-   ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/manjaro-zenbook-dualboot-setup.git
-   cd manjaro-zenbook-dualboot-setup
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/manjaro-zenbook-dualboot-setup.git
+cd manjaro-zenbook-dualboot-setup
+```
+2. Make script executable:
+```bash
+chmod +x manjaro-zenbook-setup.sh
+```
+
+3. Run the script:
+```bash
+./manjaro-zenbook-setup.sh
+```
+
+## ⚠️ Notes
+- Must be run after Manjaro installation.
+- If dual booting, install Windows first, then Manjaro.
+- Make sure Secure Boot is disabled in BIOS.
