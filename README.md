@@ -69,7 +69,9 @@ Create:
  - ```/``` (root) → 50–80 GB, ext4
  - ```/home``` → remaining free space, ext4
  - `Swap` → 8 GB (if you want hibernation; otherwise skip)
+
 `Important:`
+
  For `EFI System Partition`, choose:
 - Mount point: ```/boot/efi```
 - Format: `DO NOT format`
