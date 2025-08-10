@@ -41,12 +41,11 @@ Make sure:
 ## 3️⃣ Create Manjaro Live USB
 - Download Manjaro KDE ISO → https://manjaro.org/download/
 - Use `Rufus`:
-
-- Device: Your USB drive
-- Boot selection: Manjaro ISO
-- Partition scheme: `GPT`
-- Target system: `UEFI (non-CSM)`
-- Write mode: `DD mode` when prompted
+ - Device: Your USB drive
+ - Boot selection: Manjaro ISO
+ - Partition scheme: `GPT`
+ - Target system: `UEFI (non-CSM)`
+ - Write mode: `DD mode` when prompted
 
 ## 4️⃣ Boot Into Manjaro Installer
 - Restart and press `F12` (or ESC) to open the boot menu.
@@ -63,21 +62,15 @@ Make sure:
 
 ## 6️⃣ Partition Setup
 You’ll see:
-
-- `EFI System Partition` → ~100–300 MB, FAT32, mounted at ```/boot/efi```
-- `Windows NTFS partitions` (don’t touch)
-- `Unallocated space` (this is where we install Manjaro)
-
+ - `EFI System Partition` → ~100–300 MB, FAT32, mounted at ```/boot/efi```
+ - `Windows NTFS partitions` (don’t touch)
+ - `Unallocated space` (this is where we install Manjaro)
 Create:
-
-- ```/``` (root) → 50–80 GB, ext4
-- ```/home``` → remaining free space, ext4
-- `Swap` → 8 GB (if you want hibernation; otherwise skip)
-
+ - ```/``` (root) → 50–80 GB, ext4
+ - ```/home``` → remaining free space, ext4
+ - `Swap` → 8 GB (if you want hibernation; otherwise skip)
 `Important:`
-
-- For `EFI System Partition`, choose:
-
+ - For `EFI System Partition`, choose:
 - Mount point: ```/boot/efi```
 - Format: `DO NOT format`
 - This lets GRUB share the EFI partition with Windows.
@@ -93,12 +86,11 @@ Create:
 
 ## 9️⃣ After Installation
 - You should see `GRUB menu` with:
+ - Manjaro Linux
+ - Advanced options
+ - Windows Boot Manager
 
-- Manjaro Linux
-- Advanced options
-- Windows Boot Manager
-
-## 📥 Installation
+## 📥 Post Installation
 1. **Download** the repo:
 ```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/manjaro-zenbook-dualboot-setup.git
